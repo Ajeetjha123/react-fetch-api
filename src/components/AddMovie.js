@@ -16,6 +16,8 @@ function AddMovie(props) {
     };
 
     props.onAddMovie(movie);
+    props.onDeleteMovie(movie);
+    
   }
 
   return (
@@ -33,6 +35,7 @@ function AddMovie(props) {
         <input type='text' id='date' ref={releaseDateRef} />
       </div>
       <button>Add Movie</button>
+      <button>Delete Movie</button>
     </form>
   );
 }
